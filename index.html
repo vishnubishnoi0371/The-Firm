@@ -4,18 +4,107 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- TITLE  -->
     <title>The Firm</title>
+    <!-- EXTERNAL CSS  -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- BOOTSTRAP CSS  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- SLICK CSS  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-
-    <script src="./assets/js/add.js"></script>
+    <header class="vh-100 d-flex flex-column">
+        <nav></nav>
+        <section id="hero-section" class="flex-grow-1">
+            <div class="contianer w-100 h-100">
+                <div class="row align-items-center h-100 position-relative">
+                    <div id="hero-content" class="col-5">
+                        <h2 class="position-relative hero-content-heading ff-1 mt-28">Get Bussiness
+                            Solutions with <span>TheFirm</span>.<svg class="hero-content-svg" width="176" height="187"
+                                viewBox="0 0 176 187" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.3"
+                                    d="M0.475904 145.718C11.636 162.288 27.9618 174.849 47.0561 181.556C66.1505 188.263 87.0074 188.763 106.564 182.983C126.122 177.202 143.348 165.446 155.716 149.44C168.083 133.434 174.939 114.022 175.277 94.0532C175.616 74.0847 169.418 54.612 157.595 38.4945C145.772 22.3769 128.946 10.4635 109.588 4.50356C90.2297 -1.45638 69.3591 -1.14888 50.0405 5.3809C30.7219 11.9107 13.9732 24.3187 2.25349 40.7832L31.9949 60.9684C39.2368 50.7946 49.5863 43.1273 61.5238 39.0924C73.4612 35.0575 86.3577 34.8675 98.3197 38.5503C110.282 42.2331 120.679 49.5947 127.985 59.5541C135.29 69.5136 139.12 81.5463 138.911 93.8854C138.702 106.224 134.465 118.22 126.823 128.11C119.181 138.001 108.536 145.265 96.4514 148.837C84.3666 152.409 71.4785 152.1 59.6796 147.956C47.8807 143.811 37.7926 136.049 30.8965 125.81L0.475904 145.718Z"
+                                    fill="#ffffff" />
+                            </svg></h2>
+                        <p class="ff-2 fw-normal medium1 mt-28">Lorem Ipsum is simply dummy text of the printing
+                            and typesetting industry. Lorem Ipsum has been
+                            the industry's standard dummy.</p>
+                        <button class="hero-button mt-32">Get in Touch</button>
+                    </div>
+                    <div class="col-8 h-100 hero-img-container px-0">
+                        <img class="hero-img w-100 h-100" src="./assets/images/hero-img.png"
+                            alt="Group of people discussing around a table">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- <section id="section-1">
+        <div class="container">
+            <h3 class="ff-1 section-1-heading text-center large2">Our <span>Partner</span></h3>
+            <div class="section-1-slider mb-0">
+                <button class="section-1-slider-prev section-1-slider-button"></button>
+                <button class="section-1-slider-next section-1-slider-button"></button>
+                <div class="icon-box-1 icon-box">
+                    <img src="./assets/images/windows-logo.png" alt="windows logo">
+                </div>
+                <div class="icon-box-2 icon-box">
+                    <img src="./assets/images/google-logo.png" alt="google logo">
+                </div>
+                <div class="icon-box-3 icon-box">
+                    <img src="./assets/images/firefox-logo.png" alt="firefox-logo">
+                </div>
+                <div class="icon-box-4 icon-box">
+                    <img src="./assets/images/safari-logo.png" alt="safari logo">
+                </div>
+                <div class="icon-box-1 icon-box">
+                    <img src="./assets/images/windows-logo.png" alt="windows logo">
+                </div>
+                <div class="icon-box-2 icon-box">
+                    <img src="./assets/images/google-logo.png" alt="google logo">
+                </div>
+                <div class="icon-box-3 icon-box">
+                    <img src="./assets/images/firefox-logo.png" alt="firefox-logo">
+                </div>
+                <div class="icon-box-4 icon-box">
+                    <img src="./assets/images/safari-logo.png" alt="safari logo">
+                </div>
+                <div class="icon-box-1 icon-box">
+                    <img src="./assets/images/windows-logo.png" alt="windows logo">
+                </div>
+                <div class="icon-box-2 icon-box">
+                    <img src="./assets/images/google-logo.png" alt="google logo">
+                </div>
+                <div class="icon-box-3 icon-box">
+                    <img src="./assets/images/firefox-logo.png" alt="firefox-logo">
+                </div>
+                <div class="icon-box-4 icon-box">
+                    <img src="./assets/images/safari-logo.png" alt="safari logo">
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- JQUERY JS  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP JS  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <!-- SLICK JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- EXTERNAL JS  -->
+    <script src="./assets/js/add.js"></script>
 </body>
 
 </html>

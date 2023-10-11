@@ -82,3 +82,69 @@ showBtn.addEventListener("click", () => {
         showBtn.innerHTML = "Load More"; flag--
     }
 })
+
+$('.section-7-slider1').slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    arrows: false,
+    cssEase: 'linear',
+    centerMode: true,
+    centerPadding: '60px',
+    asNavFor: '.section-7-slider2',
+    pauseOnFocus: true,
+    pauseOnHover: true,
+    pauseOnDotsHover: true,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 500,
+                cssEase: 'linear'
+            }
+        },
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 200,
+                cssEase: 'linear'
+            }
+        }
+
+    ]
+});
+
+$('.section-7-slider2').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    cssEase: 'linear',
+    centerMode: true,
+    centerPadding: '60px',
+    asNavFor: '.section-7-slider1',
+    autoplay: true,
+    autoplaySpeed: 1000,
+    cssEase: 'linear',
+    pauseOnFocus: true,
+    pauseOnHover: true,
+    pauseOnDotsHover: true
+});

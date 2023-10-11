@@ -4,11 +4,11 @@
     --small1: 12px;
     --small2: 14px;
     --small3: 17px;
-    --medium1: 18px;
-    --medium2: 24px;
+    --medium1: 14px;
+    --medium2: 16px;
     --medium3: 30px;
     --large1: 40px;
-    --large2: 34px;
+    --large2: 29px;
     --large3: 48px;
 
 
@@ -96,7 +96,7 @@
 }
 
 .grey4 {
-    color: var(--grey4);
+    background-color: var(--grey4);
 }
 
 

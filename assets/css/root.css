@@ -23,8 +23,8 @@
 
 
     /* font-family */
-    --ff-1: 'nunito';
-    --ff-2: 'Lora';
+    --ff-1: 'Nunito', sans-serif;
+    --ff-2: 'Lora', serif;
 
 }
 
@@ -105,4 +105,3 @@
 .ff-2 {
     font-family: var(--ff-2);
 }
-

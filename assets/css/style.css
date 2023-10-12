@@ -1116,9 +1116,13 @@ form select {
     justify-content: center;
     font-size: 24px;
     transition: all 300ms linear;
-    color: #FF4400;
-    border: 1px solid #F40;
+    color: var(--yellow1);
+    border: 1px solid var(--yellow1);
     z-index: 4;
+}
+
+.to-top:hover {
+    border: 1px solid var(--black1);
 }
 
 @media (max-width: 1400px) {

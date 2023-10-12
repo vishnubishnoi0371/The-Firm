@@ -3,15 +3,13 @@
     --small: 10px;
     --small1: 12px;
     --small2: 14px;
-    --small3: 17px;
+    --small3: 15px;
     --medium1: 14px;
     --medium2: 16px;
     --medium3: 30px;
     --large1: 40px;
     --large2: 29px;
     --large3: 48px;
-
-
 
 
     /* color */
@@ -23,6 +21,7 @@
     --black1: #1e1e1e;
     --yellow1: #faca10;
     --yellow2: #FFF0B6;
+    --yellow3: #Faca16;
 
 
     /* font-family */
@@ -30,9 +29,6 @@
     --ff-2: 'Lora', serif;
 
 }
-
-
-
 
 /* font size */
 .small {
@@ -50,7 +46,6 @@
 .small3 {
     font-size: var(--small3);
 }
-
 
 .medium1 {
     font-size: var(--medium1);
@@ -110,6 +105,10 @@
 
 .yellow2 {
     color: var(--yellow2);
+}
+
+.yellow3 {
+    color: var(--yellow3);
 }
 
 /* ff */

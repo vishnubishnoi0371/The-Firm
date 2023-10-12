@@ -7,6 +7,8 @@
     <title>The-Firm-4</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" href="./assets/images/ftr-logo.svg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,9 +19,13 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
-<body class="flow">
+<body class="flow position-relative">
+    <!-- Back-To-Top -->
+    <button title="Go to top" class="myBtn position-fixed text-white p-2 p-md-3 medium1 ff-1  ">Top</button>
+
+    <!-- nav -->
     <nav class="container ">
-        <div class="d-flex align-items-center justify-content-between py-3">
+        <div class="d-flex align-items-center justify-content-between py-3 position-relative">
 
             <img class="" src="./assets/images/page-logo1.png" alt="nav-logo">
 
@@ -30,35 +36,35 @@
                     <span class="cross-5"></span>
                     <span class="cross-6"></span>
                 </label>
-                <ul class="nav-flip d-flex align-items-center gap-sm-44 gap-15 mb-0 pl-0 ml-0" Id="nav">
+                <ul class="nav-flip d-flex align-items-center gap_sm_44 mb-0 ps-0 ml-0" Id="nav">
                     <li><a href="#Home"
-                            class="medium1 fw-bold ff-1 black1 nav-click text-decoration-none home position-relative">Home</a>
+                            class="medium1 fw-bold ff-1 black1 text-decoration-none home position-relative">Home</a>
                     </li>
                     <li><a href="./i2.html"
-                            class="medium1 fw-bold ff-1 black1 nav-click text-decoration-none Solutions position-relative">Solutions</a>
+                            class="medium1 fw-bold ff-1 black1 text-decoration-none Solutions position-relative">Solutions</a>
                     </li>
                     <li><a href="#Cases"
-                            class="medium1 fw-bold ff-1 black1 nav-click text-decoration-none Cases position-relative">Cases</a>
+                            class="medium1 fw-bold ff-1 black1 text-decoration-none Cases position-relative">Cases</a>
                     </li>
                     <li><a href="#About"
-                            class="medium1 fw-bold ff-1 black1 nav-click text-decoration-none  About position-relative">About
+                            class="medium1 fw-bold ff-1 black1 text-decoration-none  About position-relative">About
                             Us</a>
                     </li>
                     <li><a href="#Blog"
-                            class="medium1 fw-bold ff-1 black1 nav-click text-decoration-none Blog position-relative">Blog</a>
+                            class="medium1 fw-bold ff-1 black1 text-decoration-none Blog position-relative">Blog</a>
                     </li>
                     <li><a href="#Contact"
-                            class="medium1 fw-bold ff-1 black1 nav-click text-decoration-none Contact position-relative">Contact
+                            class="medium1 fw-bold ff-1 black1 text-decoration-none Contact position-relative">Contact
                             Us</a>
                     </li>
 
                     <li><a href=""
-                            class="medium1 ff-1 white1 fw-bold nav-btn d-block d-xl-none text-decoration-none">Get In
+                            class="medium1 ff-1 white1 fw-bold yellow_btn d-block d-xl-none text-decoration-none">Get In
                             Touch</a>
                     </li>
                 </ul>
 
-                <button class=" medium1 ff-1 white1 fw-bold nav-btn d-none d-xl-block text-decoration-none">Get In
+                <button class=" medium1 ff-1 white1 fw-bold yellow_btn d-none d-xl-block text-decoration-none">Get In
                     Touch</button>
 
             </div>
@@ -77,8 +83,8 @@
                     <span class="sec-1-dot-3 d-none d-sm-block position-absolute"></span>
                     <span class="sec-1-dot-4 d-none d-sm-block position-absolute"></span>
                     <div class="row d-flex align-items-center justify-content-center">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                            <div class="sec-1-card-1 p-4 ">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12 overflow-hidden">
+                            <div data-aos="fade-down-right" class="sec-1-card-1 p-4 ">
                                 <a href="" class="d-flex align-items-center justify-content-center card-icon py-3"><svg
                                         width="102" height="102" viewBox="0 0 102 102" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -120,7 +126,7 @@
 
                             </div>
 
-                            <div class="sec-1-card-1 p-4 mt-4 ms-xl-4  ">
+                            <div data-aos="fade-down-right" class="sec-1-card-1 p-4 mt-4 ms-xl-4  ">
                                 <a href="" class="d-flex align-items-center justify-content-center card-icon py-3"><svg
                                         width="90" height="102" viewBox="0 0 90 102" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -156,8 +162,8 @@
 
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-                            <div class="sec-1-card-1 p-4 mt-4 mt-sm-0">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-12 overflow-hidden">
+                            <div data-aos="fade-down-right" class="sec-1-card-1 p-4 mt-4 mt-sm-0">
                                 <a href="" class="d-flex align-items-center justify-content-center card-icon py-3"><svg
                                         width="85" height="102" viewBox="0 0 85 102" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -192,7 +198,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-12 col-12">
+                <div data-aos="fade-down-left" class="col-lg-5 col-md-12 col-12">
                     <h1 class="large2 fw-900 ff-1 black1 mb-0 mt-md-0 mt-4">Perfect Solution for
                         Your <span class="top-head1 position-relative">Bussiness</span> </h1>
                     <p class="medium1 fw-normal ff-2 black1 mb-0 lh-176 my-2">Lorem Ipsum is simply dummy text of the
@@ -201,7 +207,7 @@
                         of type and scrambled it to make a type specimen book. It has survived not only five centuries,
                     </p>
                     <button
-                        class=" medium1 ff-1 white1 fw-bold nav-btn  text-decoration-none mt-md-5 mt-3 mb-md-0 mb-3">Read
+                        class=" medium1 ff-1 white1 fw-bold yellow_btn  text-decoration-none mt-lg-5 mt-3 mb-lg-0 mb-3">Read
                         More</button>
                 </div>
             </div>
@@ -211,8 +217,8 @@
     <!-- sec-2 -->
     <section id="Solutions" class="bg-grey4 mt-sm-100 pt-3 mt-3 pb-3">
         <div class="container">
-            <div class="row align-items-center justify-content-center py-90">
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="row align-items-center justify-content-center py-90 overflow-hidden">
+                <div data-aos="flip-left" class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="sec-2-card p-10 ">
                         <img class="w-100 imgs-hv" src="./assets/images/sec-2-img-1.png" alt="sec-2-card">
                         <div class="p-10">
@@ -225,17 +231,17 @@
                                 specimen. </p>
                             <hr class="sec-2-line my-4">
                             <div class="d-flex align-items-center justify-content-center">
-                                <button class="sec-2-btn medium1 fw-bold white1 ff-1 mb-0 mb-4 mt-2">Read More</button>
+                                <button class="black_btn medium1 fw-bold white1 ff-1 mb-0 mb-4 mt-2">Read More</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12 ">
+                <div data-aos="flip-left" class="col-lg-4 col-md-6 col-sm-6 col-12 ">
                     <div class="sec-2-card p-10 mt-sm-0 mt-4">
                         <img class="w-100 imgs-hv" src="./assets/images/sec-2-img-2.png" alt="sec-2-card">
                         <div class="p-10">
-                            <p class="medium2 fw-bold ff-1 black1 mb-0 py-2">Coaching</p>
-                            <p clas s="small3 fw-normal ff-2 black1 mb-0 lh-176">Lorem Ipsum is simply text of the
+                            <h3 class="medium2 fw-bold ff-1 black1 mb-0 py-2">Coaching</h3>
+                            <p class="small3 fw-normal ff-2 black1 mb-0 lh-176">Lorem Ipsum is simply text of the
                                 printing and
                                 type
                                 setting industry. make a
@@ -243,12 +249,12 @@
                                 specimen. </p>
                             <hr class="sec-2-line my-4">
                             <div class="d-flex align-items-center justify-content-center">
-                                <button class="sec-2-btn medium1 fw-bold white1 ff-1 mb-0 mb-4 mt-2">Read More</button>
+                                <button class="black_btn medium1 fw-bold white1 ff-1 mb-0 mb-4 mt-2">Read More</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12 ">
+                <div data-aos="flip-left" class="col-lg-4 col-md-6 col-sm-6 col-12 ">
                     <div class="sec-2-card p-10 mt-lg-0 mt-4">
                         <img class="w-100 imgs-hv " src="./assets/images/sec-2-img-33.png" alt="sec-2-card">
                         <div class="p-10">
@@ -261,7 +267,7 @@
                                 specimen. </p>
                             <hr class="sec-2-line my-4">
                             <div class="d-flex align-items-center justify-content-center">
-                                <button class="sec-2-btn medium1 fw-bold white1 ff-1 mb-0 mb-4 mt-2">Read More</button>
+                                <button class="black_btn medium1 fw-bold white1 ff-1 mb-0 mb-4 mt-2">Read More</button>
                             </div>
                         </div>
                     </div>
@@ -276,8 +282,8 @@
     <!-- sec-3 -->
     <section id="Cases">
         <div class="container ">
-            <div class="row align-items-center justify-content-center py-md-5 py-2">
-                <div class="col-lg-6 col-12 d-flex align-items-center justify-content-center flex-column">
+            <div class="row align-items-center justify-content-center py-md-5 py-2 overflow-hidden">
+                <div data-aos="fade-down-right" class="col-lg-6 col-12 ">
                     <h2 class="medium3 ff-1 fw-bold black1 mb-0 pb-2">Coaching</h2>
                     <p class="medium1 fw-normal ff-2 black1 mb-0 sec-3-para-1 lh-176">Lorem Ipsum is simply dummy text
                         of the printing and typesetting
@@ -286,7 +292,7 @@
                         type Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                         been the industry's standard dummy text ever since the 1500s, when an unknown printer took.</p>
                 </div>
-                <div
+                <div data-aos="fade-down-left"
                     class="col-lg-6 col-12 d-flex align-items-center justify-content-center flex-column py-1 py-md-5 pb-3 pb-md-0">
                     <div class="sec-3-img-card position-relative">
                         <img class="w-100 p-2 sec-3-img" src="./assets/images/sec-3-img-1.png" alt="card-img">
@@ -294,16 +300,17 @@
                     </div>
                 </div>
             </div>
-            <div class="row flex-lg-row flex-column-reverse align-items-center justify-content-center py-md-5 py-2">
+            <div
+                class="row flex-lg-row flex-column-reverse align-items-center justify-content-center py-md-5 py-2 overflow-hidden">
 
-                <div
+                <div data-aos="fade-down-right"
                     class="col-lg-6 col-12 d-flex align-items-center justify-content-center flex-column py-1 py-md-5 pb-3 pb-md-0">
                     <div class="sec-3-img-card position-relative">
                         <img class="w-100 p-2 sec-3-img z-1" src="./assets/images/sec-3-img-2.png" alt="card-img">
-                        <span class="sec-3-circle position-absolute d-none d-md-block"></span>
+                        <span class="sec-3-circle position-absolute d-none d-xl-block"></span>
                     </div>
                 </div>
-                <div class="col-lg-6 col-12 d-flex align-items-center justify-content-center flex-column">
+                <div data-aos="fade-down-left" class="col-lg-6 col-12 ">
                     <h2 class="medium3 ff-1 fw-bold black1 mb-0 pb-2">Digital Partner</h2>
                     <p class="medium1 fw-normal ff-2 black1 mb-0 sec-3-para-1 lh-176">Lorem Ipsum is simply dummy
                         text
@@ -317,9 +324,9 @@
                     </p>
                 </div>
             </div>
-            <div class="row align-items-center justify-content-center pb-sm-5 py-md-5 py-2">
+            <div class="row align-items-center justify-content-center pb-sm-5 py-md-5 py-2 overflow-hidden">
 
-                <div class="col-lg-6 col-12 d-flex align-items-center justify-content-center flex-column">
+                <div data-aos="fade-down-right" class="col-lg-6 col-12 ">
                     <h2 class="medium3 ff-1 fw-bold black1 mb-0 pb-2">SEO</h2>
                     <p class="medium1 fw-normal ff-2 black1 mb-0 sec-3-para-1 lh-176">Lorem Ipsum is simply
                         dummy text
@@ -332,7 +339,7 @@
                         been the industry's standard dummy text ever since the 1500s, when an unknown printer
                         took.</p>
                 </div>
-                <div
+                <div data-aos="fade-down-left"
                     class="col-lg-6 col-12 d-flex align-items-center justify-content-center flex-column py-1 py-md-5 pb-3 pb-md-0 position-relative">
                     <div class="sec-3-img-card position-relative">
                         <img class="w-100 p-2 sec-3-img z-1" src="./assets/images/sec-3-img-3.png" alt="card-img">
@@ -347,10 +354,10 @@
     <!-- sec-4 -->
     <section id="Blog" class="bg-grey4 d-flex align-items-center justify-content-center">
         <div class="container  my_container overflow-hidden z-1">
-            <p class="large2 fw-900 black1 ff-1 mb-0 text-center mt-59 mb-5">Our
+            <h1 class="large2 fw-900 black1 ff-1 mb-0 text-center mt-59 mb-5">Our
                 <span class=" top-head1 position-relative">
                     Testimonials </span>
-            </p>
+            </h1>
 
 
             <div class="comp">
@@ -498,26 +505,26 @@
             <div class="d-flex align-items-center justify-content-center pt-5">
                 <img src="./assets/images/ftr-logo.svg" alt="footer-logo">
             </div>
-            <ul class="nav-fli d-flex flex-wrap align-items-center justify-content-center gap-sm-44 gap-15 mb-0 ps-0 ml-0 py-3 py-sm-5"
-                Id="nav">
+            <ul
+                class=" d-flex flex-wrap align-items-center justify-content-center gap-sm-44 gap-15 mb-0 ps-0 ml-0 py-3 py-sm-5">
                 <li><a href="#Home"
-                        class="medium1 fw-bold ff-1 black1 nav-click text-decoration-none home position-relative">Home</a>
+                        class="medium1 fw-bold ff-1 black1 text-decoration-none home position-relative">Home</a>
                 </li>
                 <li><a href="#Mission"
-                        class="medium1 fw-bold ff-1 black1 nav-click text-decoration-none mission position-relative">Solutions</a>
+                        class="medium1 fw-bold ff-1 black1 text-decoration-none mission position-relative">Solutions</a>
                 </li>
                 <li><a href="#Training"
-                        class="medium1 fw-bold ff-1 black1 nav-click text-decoration-none training position-relative">Cases</a>
+                        class="medium1 fw-bold ff-1 black1 text-decoration-none training position-relative">Cases</a>
                 </li>
                 <li><a href="#Training"
-                        class="medium1 fw-bold ff-1 black1 nav-click text-decoration-none  training1 position-relative text-nowrap">About
+                        class="medium1 fw-bold ff-1 black1 text-decoration-none  training1 position-relative text-nowrap">About
                         Us</a>
                 </li>
                 <li><a href="#Footer"
-                        class="medium1 fw-bold ff-1 black1 nav-click text-decoration-none footer position-relative">Blog</a>
+                        class="medium1 fw-bold ff-1 black1 text-decoration-none footer position-relative">Blog</a>
                 </li>
                 <li><a href="#Footer"
-                        class="medium1 fw-bold ff-1 black1 nav-click text-decoration-none footer position-relative text-nowrap">Contact
+                        class="medium1 fw-bold ff-1 black1 text-decoration-none footer position-relative text-nowrap">Contact
                         Us</a>
                 </li>
 
@@ -628,6 +635,13 @@
         });
 
 
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,
+            once: true
+        })
     </script>
 </body>
 

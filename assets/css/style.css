@@ -88,7 +88,9 @@ h6 {
 .section-4-heading,
 .section-1-heading,
 .section-3-heading,
-.section-6-heading {
+.section-6-heading,
+.section-7-heading,
+.section-8-heading {
     font-weight: 900;
 }
 .section-1-heading>span,
@@ -97,7 +99,9 @@ h6 {
 .section-4-heading>span,
 .section-4-sub-heading>span,
 .section-5-heading>span,
-.section-6-heading>span {
+.section-6-heading>span,
+.section-7-heading>span,
+.section-8-heading>span {
     position: relative;
 }
 
@@ -106,7 +110,9 @@ h6 {
 .section-3-heading>span::before,
 .section-4-heading>span::before,
 .section-5-heading>span::before,
-.section-6-heading>span::before {
+.section-6-heading>span::before,
+.section-7-heading>span::before,
+.section-8-heading>span::before {
     content: "";
     position: absolute;
     right: 0;
@@ -265,16 +271,17 @@ h6 {
 .tab-content-button {
     margin-top: 30px;
     border-radius: 5px;
-    background: #1E1E1E;
+    background: var(--black1);
     box-shadow: 0px 10px 40px -12px rgba(30, 30, 30, 0.35);
     color: white;
     padding: 12px 30px;
+    border: 2px solid var(--black1);
     transition: all 300ms;
 }
 
 .tab-content-button:hover {
-    background: white;
-    color: #1E1E1E;
+    background: var(--yellow1);
+    border-color: var(--yellow1);
 }
 
 .tab-description {
@@ -728,8 +735,9 @@ h6 {
     padding: 100px 0;
 }
 
-.section-7-slide1{
+.section-7-slider1{
     padding: 50px 0;
+    margin-top: 50px;
 }
 
 .slick-dotted.slick-slider{
@@ -828,4 +836,61 @@ h6 {
 
 .slick-dots li.slick-active button:before{
     color: var(--yellow1) !important;
+}
+
+.form-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 60px 0;
+    z-index: 2;
+}
+
+/* SECTION-5-BUTTONS */
+.btn-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--white1);
+    border-left: none;
+    background: var(--yellow1);
+    transition: all 0.3s;
+    padding: 9px 13px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.section-5-btn {
+    position: absolute;
+    top: 8%;
+    left: -5.1%;
+}
+
+.btn-svg2 {
+
+    rotate: 180deg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--white1);
+    border-left: none;
+    background: var(--yellow1);
+    transition: all 0.3s;
+    opacity: .7;
+    padding: 9px 13px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.btn-svg2:active,
+.btn-svg:active {
+    scale: 0.9;
+    opacity: 1;
+}
+
+    
+
+.map{
+
 }

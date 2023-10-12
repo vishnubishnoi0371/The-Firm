@@ -51,6 +51,7 @@
 
 .to-top:hover {
     border: 1px solid var(--black1);
+    color: var(--black1);
 }
 
 .slide-1 img {

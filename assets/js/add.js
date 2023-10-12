@@ -41,7 +41,10 @@ $('.section-1-slider').slick({
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 infinite: true,
-                dots: false
+                dots: false,
+                autoplay: true,
+                autoplaySpeed: 500,
+                cssEase: 'linear'
             }
         },
         {

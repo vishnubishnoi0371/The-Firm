@@ -5,7 +5,7 @@
     text-decoration: none !important;
 }
 
-html{
+html {
     overflow-x: hidden;
 }
 
@@ -415,14 +415,7 @@ h6 {
     margin-top: 50px;
 }
 
-@media (max-width:768px) {
 
-    .next,
-    .prev {
-        display: none !important;
-    }
-
-}
 
 /* SECTION-3  */
 .sec-1-card-1 {
@@ -851,7 +844,7 @@ h6 {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 1;
 }
 
 #section-8 {
@@ -865,7 +858,9 @@ h6 {
     border-radius: 15px;
     border: 1px solid white;
     box-shadow: 0px 19px 34px 14px #0000000F;
-    z-index: 1;
+    position: relative;
+    z-index: 2;
+
 }
 
 .section-8-heading>span::before {
@@ -1161,20 +1156,43 @@ form select {
         /* font size */
         --small1: 12px;
         --small2: 14px;
-        --small3: 17px;
-        --medium1: 16px;
-        --medium2: 24px;
-        --medium3: 30px;
+        --small3: 14px;
+        --medium1: 15px;
+        --medium2: 21px;
+        --medium3: 27px;
         --large1: 40px;
-        --large2: 44px;
+        --large2: 38px;
         --large3: 48px;
     }
 
-        #section-5,
-        #section-1,
-        #section-3 {
-            padding: 60px 0;
-        }
+    #section-5,
+    #section-1,
+    #section-3 {
+        padding: 60px 0;
+    }
+
+    #section-2,
+    #section-4,
+    #section-6 {
+        padding: 60px 0;
+    }
+
+    .blog-time {
+        font-size: 9px;
+    }
+
+    .blog-name-text {
+        font-size: 12px;
+    }
+
+    #section-7 {
+        padding: 60px 0;
+    }
+
+    .section-7-slider1 {
+        padding: 50px 0;
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -1219,6 +1237,11 @@ form select {
 
     .form-container {
         max-width: 992px;
+    }
+
+    .next,
+    .prev {
+        display: none !important;
     }
 }
 

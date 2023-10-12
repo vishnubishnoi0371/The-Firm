@@ -5,6 +5,10 @@
     text-decoration: none !important;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 p,
 h1,
 h2,
@@ -1169,7 +1173,7 @@ form select {
         #section-5,
         #section-1,
         #section-3 {
-            padding: 70px 0;
+            padding: 60px 0;
         }
 }
 

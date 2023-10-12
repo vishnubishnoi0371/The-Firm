@@ -1144,6 +1144,33 @@ form select {
     .form-container {
         max-width: 1200px;
     }
+
+    .hero-content-heading span {
+        font-size: 42px;
+    }
+
+    .hero-content-heading {
+        font-size: 40px;
+    }
+
+    :root {
+        /* font size */
+        --small1: 12px;
+        --small2: 14px;
+        --small3: 17px;
+        --medium1: 16px;
+        --medium2: 24px;
+        --medium3: 30px;
+        --large1: 40px;
+        --large2: 44px;
+        --large3: 48px;
+    }
+
+        #section-5,
+        #section-1,
+        #section-3 {
+            padding: 70px 0;
+        }
 }
 
 @media (max-width: 992px) {
@@ -1217,7 +1244,7 @@ form select {
 
 @media (max-width: 370px) {
     .map {
-        max-width: 370px;
+        max-width: 320px;
     }
 
     .form-container {

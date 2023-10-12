@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400&family=Nunito:wght@700&display=swap');
 
 * {
-    list-style-type: none;
+    list-style-type: none !important;
+    text-decoration: none !important;
 }
 
 .home-bar {

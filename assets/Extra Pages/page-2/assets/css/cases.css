@@ -16,6 +16,38 @@
     border-radius: 37px;
 }
 
+.nav-click:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    bottom: 3px;
+    height: 3px;
+    width: 100%;
+    background: var(--yellow1);
+}
+
+.icon-hv {
+    transition: all linear 500ms;
+}
+
+.icon-hv:hover>svg path {
+    fill: var(--yellow1) !important;
+}
+
+.app-icon {
+    transition: all linear 500ms;
+
+}
+
+.app-icon:hover {
+    transform: translateY(-40%);
+}
+
+#footer {
+    padding: 100px 0 44px 0;
+}
+
 .nav-links {
     color: var(--black1);
     font-family: var(--ff1);

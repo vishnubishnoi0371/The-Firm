@@ -1,0 +1,158 @@
+:root {
+    /* font size */
+    --small: 10px;
+    --small1: 12px;
+    --small2: 14px;
+    --small3: 17px;
+    --medium1: 14px;
+    --medium2: 16px;
+    --medium3: 30px;
+    --large1: 40px;
+    --large2: 29px;
+    --large3: 48px;
+
+
+
+
+    /* color */
+    --white1: #fff;
+    --grey1: #c4c4c4;
+    --grey2: #a5a5a5;
+    --grey3: #b0b0b0;
+    --grey4: #f7f7f7;
+    --black1: #1e1e1e;
+    --yellow1: #faca10;
+    --yellow2: #FFF0B6;
+
+
+    /* font-family */
+    --ff-1: 'Nunito', sans-serif;
+    --ff-2: 'Lora', serif;
+
+}
+
+
+
+
+/* font size */
+.small {
+    font-size: var(--small);
+}
+
+.small1 {
+    font-size: var(--small1);
+}
+
+.small2 {
+    font-size: var(--small2);
+}
+
+.small3 {
+    font-size: var(--small3);
+}
+
+
+.medium1 {
+    font-size: var(--medium1);
+}
+
+.medium2 {
+    font-size: var(--medium2);
+}
+
+.medium3 {
+    font-size: var(--medium3);
+}
+
+.large1 {
+    font-size: var(--large1);
+}
+
+.large2 {
+    font-size: var(--large2);
+}
+
+.large3 {
+    font-size: var(--large3);
+}
+
+
+
+/* color */
+.white1 {
+    color: var(--white1);
+}
+
+.grey1 {
+    color: var(--grey1);
+}
+
+.grey2 {
+    color: var(--grey2);
+}
+
+.grey3 {
+    color: var(--grey3);
+}
+
+.grey4 {
+    background-color: var(--grey4);
+}
+
+
+.black1 {
+    color: var(--black1);
+}
+
+.yellow1 {
+    color: var(--yellow1);
+}
+
+.yellow2 {
+    color: var(--yellow2);
+}
+
+/* ff */
+.ff-1 {
+    font-family: var(--ff-1);
+}
+
+.ff-2 {
+    font-family: var(--ff-2);
+}
+
+
+@media (min-width:576px) {
+    :root {
+        /* font size */
+        --small: 10px;
+        --small1: 12px;
+        --small2: 14px;
+        --small3: 17px;
+        --medium1: 18px;
+        --medium2: 24px;
+        --medium3: 30px;
+        --large1: 40px;
+        --large2: 44px;
+        --large3: 48px;
+
+
+
+
+        /* color */
+        --white1: #fff;
+        --grey1: #c4c4c4;
+        --grey2: #a5a5a5;
+        --grey3: #b0b0b0;
+        --grey4: #f7f7f7;
+        --black1: #1e1e1e;
+        --yellow1: #faca10;
+
+
+        /* font-family */
+        --ff-1: 'nunito';
+        --ff-2: 'Lora';
+
+    }
+
+}

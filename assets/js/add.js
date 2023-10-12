@@ -36,7 +36,7 @@ $('.section-1-slider').slick({
     cssEase: 'linear',
     responsive: [
         {
-            breakpoint: 1024,
+            breakpoint: 992,
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,

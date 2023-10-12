@@ -22,57 +22,29 @@
 
 <body class="overflow-x-hidden">
     <header class="vh-100 d-flex flex-column">
-        <nav>
-            <nav class="container ">
-                <div class="d-flex align-items-center justify-content-between py-3">
-
-                    <img src="./assets/images/page-logo1.png" alt="nav-logo">
-
-                    <div class="d-flex align-items-center justify-content-center ">
-
-                        <label id="menuIcon">
-                            <span class="cross-4"></span>
-                            <span class="cross-5"></span>
-                            <span class="cross-6"></span>
-                        </label>
-                        <ul class="nav-flip d-flex align-items-center gap-sm-44 gap-15 mb-0 pl-0 ml-0" Id="nav">
-                            <li><a href="#Home"
-                                    class="medium1 fw-bold ff-1 black1 nav-click home position-relative">Home</a>
-                            </li>
-                            <li><a href="./i2.html"
-                                    class="medium1 fw-bold ff-1 black1 nav-click Solutions position-relative">Solutions</a>
-                            </li>
-                            <li><a href="#Cases"
-                                    class="medium1 fw-bold ff-1 black1 nav-click Cases position-relative">Cases</a>
-                            </li>
-                            <li><a href="#About"
-                                    class="medium1 fw-bold ff-1 black1 nav-click  About position-relative">About
-                                    Us</a>
-                            </li>
-                            <li><a href="#Blog"
-                                    class="medium1 fw-bold ff-1 black1 nav-click Blog position-relative">Blog</a>
-                            </li>
-                            <li><a href="#Contact"
-                                    class="medium1 fw-bold ff-1 black1 nav-click Contact position-relative">Contact
-                                    Us</a>
-                            </li>
-
-                            <li><a href="" class="medium1 ff-1 white1 fw-bold nav-btn d-block d-xl-none">Get In
-                                    Touch</a>
-                            </li>
-                        </ul>
-
-                        <button class=" medium1 ff-1 white1 fw-bold nav-btn d-none d-xl-block">Get In
-                            Touch</button>
-
-                    </div>
+    <nav>
+        <div class="container">
+            <div class="d-flex justify-content-between pt-4 ">
+                <div class="logo-img">
+                    <img src="./assets/images/page-logo1.png" alt="LOGO" class="w-100 mb-3 mb-lg-0">
                 </div>
-            </nav>
-        </nav>
+                <ul class="d-flex align-items-center menu gap-xl-5 gap-3" id="menu">
+                    <li class="mb-0"><a href="" class="nav-links">Home</a></li>
+                    <li class="mb-0"><a href="" class="nav-links">Solutions</a></li>
+                    <li class="mb-0"><a href="" class="nav-links">Cases</a></li>
+                    <li class="mb-0"><a href="" class="nav-links">About Us</a></li>
+                    <li class="mb-0"><a href="" class="nav-links">Blog</a></li>
+                    <li class="mb-0"><a href="" class="nav-links">Contact Us</a></li>
+                    <li><button class="yellow-btn pb-2">Get in Touch</button></li>
+                </ul>
+                <label class="label"><span></span></label>
+            </div>
+        </div>
+    </nav>
         <section id="hero-section" class="flex-grow-1">
             <div class="container w-100 h-100">
                 <div class="row align-items-center h-100 position-relative">
-                    <div id="hero-content" class="col-5">
+                    <div id="hero-content" class="col-lg-5 col-12">
                         <h2 class="position-relative hero-content-heading ff-1 mt-28">Get Bussiness
                             Solutions with <span>TheFirm</span>.<svg class="hero-content-svg" width="176" height="187"
                                 viewBox="0 0 176 187" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -80,12 +52,12 @@
                                     d="M0.475904 145.718C11.636 162.288 27.9618 174.849 47.0561 181.556C66.1505 188.263 87.0074 188.763 106.564 182.983C126.122 177.202 143.348 165.446 155.716 149.44C168.083 133.434 174.939 114.022 175.277 94.0532C175.616 74.0847 169.418 54.612 157.595 38.4945C145.772 22.3769 128.946 10.4635 109.588 4.50356C90.2297 -1.45638 69.3591 -1.14888 50.0405 5.3809C30.7219 11.9107 13.9732 24.3187 2.25349 40.7832L31.9949 60.9684C39.2368 50.7946 49.5863 43.1273 61.5238 39.0924C73.4612 35.0575 86.3577 34.8675 98.3197 38.5503C110.282 42.2331 120.679 49.5947 127.985 59.5541C135.29 69.5136 139.12 81.5463 138.911 93.8854C138.702 106.224 134.465 118.22 126.823 128.11C119.181 138.001 108.536 145.265 96.4514 148.837C84.3666 152.409 71.4785 152.1 59.6796 147.956C47.8807 143.811 37.7926 136.049 30.8965 125.81L0.475904 145.718Z"
                                     fill="#ffffff" />
                             </svg></h2>
-                        <p class="ff-2 fw-normal medium1 mt-28">Lorem Ipsum is simply dummy text of the printing
+                        <p class="ff-2 fw-normal medium1 mt-28 w-75">Lorem Ipsum is simply dummy text of the printing
                             and typesetting industry. Lorem Ipsum has been
                             the industry's standard dummy.</p>
                         <button class="hero-button ff-1 medium1 fw-bold letter-space-5 mt-32">Get in Touch</button>
                     </div>
-                    <div class="col-8 h-100 hero-img-container px-0">
+                    <div class="col-lg-8 col-12 h-lg-100 hero-img-container px-0">
                         <img class="hero-img w-100 h-100" src="./assets/images/hero-img.png"
                             alt="Group of people discussing around a table">
                     </div>
@@ -154,7 +126,7 @@
     <section id="section-2">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6 col-12">
                     <h3 class="section-2-heading ff-1 large2 letter-space-2">Frustration of <span>Clients</span></h3>
                     <p class="mt-22 ff-2 fw-normal medium1 letter-space-2">Lorem Ipsum is simply dummy text of the
                         printing and typesetting industry. Lorem Ipsum has been the industry's standard
@@ -166,7 +138,7 @@
                         <li>When an unknown printer took a galley of type and scrambled it</li>
                     </ul>
                 </div>
-                <div class="col-6 position-relative">
+                <div class="col-lg-6 col-12 position-relative">
                     <img src="./assets/images/section-2-img.png" alt="Data represented through charts and graphs"
                         class="w-100">
                 </div>
@@ -336,13 +308,13 @@
                 </div>
             </div>
             <div class="tab-content-row d_none row justify-content-between" id="tab-content-1">
-                <div class="col-5">
+                <div class="col-md-5 col-12">
                     <div class="tab-image">
                         <img src="./assets/images/tab-img.png" alt="brand printed on a map with hands around it"
                             class="w-100">
                     </div>
                 </div>
-                <div class="col-6 tab-description">
+                <div class="col-md-6 col-12 tab-description">
                     <h4 class="black1 ff-1 fw-bold letter-space-5 medium3 section-4-sub-heading"><span>Market
                             Research</span></h4>
                     <p class="mt-17 black1 ff-2 medium1 fw-normal letter-space-2">Lorem Ipsum is simply dummy text of
@@ -352,13 +324,13 @@
                 </div>
             </div>
             <div class="tab-content-row d_none row justify-content-between" id="tab-content-2">
-                <div class="col-5">
+                <div class="col-md-5 col-12">
                     <div class="tab-image">
                         <img src="./assets/images/tab-img.png" alt="brand printed on a map with hands around it"
                             class="w-100">
                     </div>
                 </div>
-                <div class="col-6 tab-description">
+                <div class="col-md-6 col-12 tab-description">
                     <h4 class="black1 ff-1 fw-bold letter-space-5 medium3 section-4-sub-heading"><span>Branding</span>
                     </h4>
                     <p class="mt-17 black1 ff-2 medium1 fw-normal letter-space-2">Lorem Ipsum is simply dummy text of
@@ -369,13 +341,13 @@
                 </div>
             </div>
             <div class="tab-content-row d_none row justify-content-between" id="tab-content-3">
-                <div class="col-5">
+                <div class="col-md-5 col-12">
                     <div class="tab-image">
                         <img src="./assets/images/tab-img.png" alt="brand printed on a map with hands around it"
                             class="w-100">
                     </div>
                 </div>
-                <div class="col-6 tab-description">
+                <div class="col-md-6 col-12 tab-description">
                     <h4 class="black1 ff-1 fw-bold letter-space-5 medium3 section-4-sub-heading"><span>Reporting</span>
                     </h4>
                     <p class="mt-17 black1 ff-2 medium1 fw-normal letter-space-2">Lorem Ipsum is simply dummy text of
@@ -386,13 +358,13 @@
                 </div>
             </div>
             <div class="tab-content-row d_none row justify-content-between" id="tab-content-4">
-                <div class="col-5">
+                <div class="col-md-5 col-12">
                     <div class="tab-image">
                         <img src="./assets/images/tab-img.png" alt="brand printed on a map with hands around it"
                             class="w-100">
                     </div>
                 </div>
-                <div class="col-6 tab-description">
+                <div class="col-md-6 col-12 tab-description">
                     <h4 class="black1 ff-1 fw-bold letter-space-5 medium3 section-4-sub-heading"><span>Data
                             Analysis</span></h4>
                     <p class="mt-17 black1 ff-2 medium1 fw-normal letter-space-2">Lorem Ipsum is simply dummy text of
@@ -414,7 +386,7 @@
                 a type specimen
                 book. It has survived not only five centuries,</p>
             <div class="section-5-row">
-                <div class="col-5">
+                <div class="col-lg-5 col-12">
                     <h3 class="mt-40 ff-1 fw-bold medium3 letter-space-5 black1">Lorem Ipsum is simply</h3>
                     <p class="mt-3 ff-2 medium1 fw-normal letter-space-2 black1">Lorem Ipsum is simply dummy text of the
                         printing and typesetting industry. Lorem Ipsum has been the industry standard
@@ -425,7 +397,7 @@
                         unknown printer took.</p>
                     <button class="section-5-button ff-1 medium1 fw-bold letter-space-5 mt-4">Read More</button>
                 </div>
-                <div class="col-6 ps-4">
+                <div class="col-lg-6 col-12 ps-4">
                     <div class="section-5-img-container">
                         <img src="./assets/images/section-5-img.png"
                             alt="man with glasses trying to explain to a woman and and elder person on a board with a marker"

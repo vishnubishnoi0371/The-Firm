@@ -166,3 +166,19 @@ label.addEventListener("click", () => {
         open--;
     }
 });
+
+setTimeout(() => {
+    document.getElementById("preloder").classList.add("d-none");
+    document.body.classList.remove("overflow-hidden")
+}, 2000)
+
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+        toTop.style.display = "flex";
+    }
+    else {
+        toTop.style.display = "none";
+    }
+});

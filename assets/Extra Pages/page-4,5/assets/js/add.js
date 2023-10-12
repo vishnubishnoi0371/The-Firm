@@ -10,70 +10,128 @@ let Cases = document.querySelector(".Cases");
 let About = document.querySelector(".About");
 let Blog = document.querySelector(".Blog");
 let Contact = document.querySelector(".Contact");
+let myBtn = document.querySelector(".myBtn");
 
+
+window.onscroll = function () { scrollFunction() };
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        myBtn.style.display = "block";
+    } else {
+        myBtn.style.display = "none";
+    }
+}
+
+myBtn.addEventListener("click", function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+})
+
+setTimeout(() => {
+    document.getElementById("preloder").classList.add("d-none");
+    document.body.classList.remove("overflow-hidden")
+}, 2000)
 
 menuicon.addEventListener("click", function () {
-    if(a.classList !== document.querySelector("fix-lft")){
-    a.classList.toggle("fix-lft");
-    flow.classList.toggle("flow-hidden");
-    cross4.classList.toggle("cross-1");
-    cross5.classList.toggle("cross-2");
-    cross6.classList.toggle("cross-3")}
-});
-
-Home.addEventListener("click",function(){
-    a.classList.toggle("fix-lft");
-    flow.classList.remove("flow-hidden");
-    cross4.classList.toggle("cross-1");
-    cross5.classList.toggle("cross-2");
-    cross6.classList.toggle("cross-3");
-});
-Solutions.addEventListener("click",function(){
-    a.classList.remove("fix-lft");
-    flow.classList.remove("flow-hidden");
-    cross4.classList.toggle("cross-1");
-    cross5.classList.toggle("cross-2");
-    cross6.classList.toggle("cross-3");
-});
-Cases.addEventListener("click",function(){
-    a.classList.remove("fix-lft");
-    flow.classList.remove("flow-hidden");
-    cross4.classList.toggle("cross-1");
-    cross5.classList.toggle("cross-2");
-    cross6.classList.toggle("cross-3");
-});
-
-About.addEventListener("click",function(){
-    a.classList.remove("fix-lft");
-    flow.classList.remove("flow-hidden");
-    cross4.classList.toggle("cross-1");
-    cross5.classList.toggle("cross-2");
-    cross6.classList.toggle("cross-3");
-});
-
-Blog.addEventListener("click",function(){
-    a.classList.remove("fix-lft");
-    flow.classList.remove("flow-hidden");
-    cross4.classList.toggle("cross-1");
-    cross5.classList.toggle("cross-2");
-    cross6.classList.toggle("cross-3");
-});
-
-Contact.addEventListener("click",function(){
-    a.classList.remove("fix-lft");
-    flow.classList.remove("flow-hidden");
-    cross4.classList.toggle("cross-1");
-    cross5.classList.toggle("cross-2");
-    cross6.classList.toggle("cross-3");
-});
-
-const toTop = document.querySelector(".to-top");
-
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 200) {
-        toTop.style.display = "flex";
+    if (a.classList !== document.querySelector("fix-lft")) {
+        a.classList.toggle("fix-lft");
+        flow.classList.toggle("flow-hidden");
+        cross4.classList.toggle("cross-1");
+        cross5.classList.toggle("cross-2");
+        cross6.classList.toggle("cross-3")
     }
-    else {
-        toTop.style.display = "none";
+});
+
+Home.addEventListener("click", function () {
+    a.classList.toggle("fix-lft");
+    flow.classList.remove("flow-hidden");
+    cross4.classList.toggle("cross-1");
+    cross5.classList.toggle("cross-2");
+    cross6.classList.toggle("cross-3");
+});
+Solutions.addEventListener("click", function () {
+    a.classList.remove("fix-lft");
+    flow.classList.remove("flow-hidden");
+    cross4.classList.toggle("cross-1");
+    cross5.classList.toggle("cross-2");
+    cross6.classList.toggle("cross-3");
+});
+Cases.addEventListener("click", function () {
+    a.classList.remove("fix-lft");
+    flow.classList.remove("flow-hidden");
+    cross4.classList.toggle("cross-1");
+    cross5.classList.toggle("cross-2");
+    cross6.classList.toggle("cross-3");
+});
+
+About.addEventListener("click", function () {
+    a.classList.remove("fix-lft");
+    flow.classList.remove("flow-hidden");
+    cross4.classList.toggle("cross-1");
+    cross5.classList.toggle("cross-2");
+    cross6.classList.toggle("cross-3");
+});
+
+Blog.addEventListener("click", function () {
+    a.classList.remove("fix-lft");
+    flow.classList.remove("flow-hidden");
+    cross4.classList.toggle("cross-1");
+    cross5.classList.toggle("cross-2");
+    cross6.classList.toggle("cross-3");
+});
+
+Contact.addEventListener("click", function () {
+    a.classList.remove("fix-lft");
+    flow.classList.remove("flow-hidden");
+    cross4.classList.toggle("cross-1");
+    cross5.classList.toggle("cross-2");
+    cross6.classList.toggle("cross-3");
+});
+
+// slide
+$('.slider-for').slick({
+    arrow: false,
+    centerMode: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: '.slider-nav',
+    responsive: [{
+        breakpoint: 991.5,
+        settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+        }
+    },
+    {
+        breakpoint: 767.5,
+        settings: {
+            centerMode: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
+    },
+    {
+        breakpoint: 575.5,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+        }
     }
+    ]
+});
+$('.slider-nav').slick({
+    arrow: false,
+    centerMode: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: true,
+    focusOnSelect: true
+});
+
+$('a[data-slide]').click(function (e) {
+    e.preventDefault();
+    var slide = $(this).data('slide');
+    $('.slider-nav').slick('slickGoTo', slide - 1);
 });
